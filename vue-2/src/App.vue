@@ -1,15 +1,16 @@
 <template>
-   <ZangFei />
+  <div>
+    <HomeFather />
+  </div>
 </template>
 
-
 <script>
-import ZangFei from './views/ZangFei.vue'
+import HomeFather from "./views/home/HomeFather.vue";
 export default {
-  components:{
-    ZangFei,
-  }
-}
+  components: {
+    HomeFather,
+  },
+};
 </script>
 
 <style lang="less">
@@ -17,8 +18,5 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-
 }
-
 </style>
