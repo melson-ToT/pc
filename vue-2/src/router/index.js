@@ -47,4 +47,16 @@ const router = new VueRouter({
 })
 
 
+router.beforeEach((to,from,next)=>{
+  if(to.meta.requireLogin){
+      if(localStorage.getItem("token")){ 
+          next()
+      }else{
+          next("/login")
+      }
+  }else{
+      next()
+  }
+})
+
 export default router
