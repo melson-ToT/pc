@@ -7,7 +7,7 @@
         @click="active = index"
         :style="{ background: active === index ? '#eee' : '' }"
       >
-        <span :style="{ color: active === index ? 'red' : '' }">{{
+        <span :style="{ color: active === index ? 'red' : '' }" >{{
           item.span
         }}</span>
       </li>
@@ -62,6 +62,7 @@ export default {
 .bott-sj {
   width: 100%;
   height: calc(100% - 150px);
+  background:#eee;
   display: flex;
   ul {
     width: 300px;

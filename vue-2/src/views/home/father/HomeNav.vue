@@ -1,13 +1,13 @@
 <template>
     <div>
-      <HomeBottom />
       <HomeHead />
+      <HomeBottom />
     </div>
 </template>
 
 <script>
-import HomeHead from './HomeBottom.vue'
-import HomeBottom from './HomeHead.vue'
+import HomeHead from './HomeHead.vue'
+import HomeBottom from './HomeBottom.vue'
 export default {
     components:{
         HomeHead,
